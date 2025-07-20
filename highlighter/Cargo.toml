@@ -17,3 +17,13 @@ workspace = true
 iced_core.workspace = true
 
 two-face.workspace = true
+
+[features]
+# Explictly set regex engine to onig
+syntect-onig = ["two-face/syntect-onig"]
+# Explictly set regex engine to fancy
+syntect-fancy = ["two-face/syntect-fancy"]
+# Explictly set regex engine to default-fancy
+syntect-default-fancy = ["two-face/syntect-default-fancy"]
+# Explicitly set regex engine to default-onig
+syntect-default-onig = ["two-face/syntect-default-onig"]
